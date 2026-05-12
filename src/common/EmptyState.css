@@ -1,0 +1,64 @@
+/* Empty State Styles */
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 2rem;
+  text-align: center;
+  min-height: 300px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #f1f3f5 100%);
+  border-radius: 0.5rem;
+  border: 2px dashed #dee2e6;
+}
+
+.empty-state-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgba(30, 77, 139, 0.1);
+  color: #1e4d8b;
+  margin-bottom: 1rem;
+}
+
+.empty-state h4 {
+  color: #1e4d8b;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+}
+
+.empty-state p {
+  color: #6c757d;
+  font-size: 1rem;
+  margin: 0 0 1.5rem 0;
+  max-width: 400px;
+}
+
+.empty-state-action {
+  margin-top: 1rem;
+}
+
+.empty-state-action .btn {
+  min-width: 150px;
+}
+
+@media (max-width: 768px) {
+  .empty-state {
+    padding: 2rem 1rem;
+    min-height: 250px;
+  }
+
+  .empty-state-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .empty-state h4 {
+    font-size: 1.25rem;
+  }
+}
