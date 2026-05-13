@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Create a separate axios instance for the program service (port 8083)
-const PROGRAM_BASE_URL = import.meta.env.VITE_PROGRAM_API_BASE_URL || 'http://localhost:8083';
+const PROGRAM_BASE_URL = import.meta.env.VITE_PROGRAM_API_BASE_URL || 'http://localhost:9091';
 
 const programAxiosInstance = axios.create({
   baseURL: PROGRAM_BASE_URL,
