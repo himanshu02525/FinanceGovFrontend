@@ -1,0 +1,104 @@
+/* ======================================================
+   USER DETAILS – FINAL PREMIUM UI (SIDEBAR AWARE)
+====================================================== */
+
+/* PAGE WRAPPER */
+.user-details-container {
+  padding: 40px 30px;
+  background: #f4f7fb;
+  min-height: calc(100vh - 120px);
+}
+
+/* CENTERING WITH SIDEBAR CONTEXT */
+.user-details-wrapper {
+  max-width: 900px;     /* ✅ keeps it centered in content area */
+}
+
+/* CARD */
+.user-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px 36px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  animation: slideUp 0.35s ease;
+}
+
+/* TITLE */
+.user-card h2 {
+  font-size: 26px;
+  margin-bottom: 25px;
+  color: #143859;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+/* DETAILS GRID */
+.user-details-grid {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  row-gap: 14px;
+  column-gap: 20px;
+  font-size: 14px;
+}
+
+/* LABEL */
+.user-details-grid .label {
+  font-weight: 600;
+  color: #143859;
+}
+
+/* VALUE */
+.user-details-grid .value {
+  color: #333;
+  background: #f8fafc;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+/* STATUS BADGE */
+.status-active {
+  background: #198754;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/* ACTION AREA */
+.user-card-actions {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* BACK BUTTON */
+.btn-back {
+  padding: 8px 18px;
+  border-radius: 8px;
+  border: none;
+  background: #143859;
+  color: white;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.btn-back:hover {
+  background: #0f2e4a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(20, 56, 89, 0.25);
+}
+
+/* ENTRY ANIMATION */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
