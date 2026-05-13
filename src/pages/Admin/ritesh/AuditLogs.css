@@ -1,0 +1,132 @@
+/* =====================================================
+   AUDIT LOGS – MODERN DASHBOARD UI
+===================================================== */
+
+.audit-page {
+  padding: 25px;
+  background: #f4f7fb;
+}
+
+.audit-page h2 {
+  margin-bottom: 20px;
+  color: #143859;
+}
+
+/* CONTROLS */
+.controls {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.controls input,
+.controls select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: white;
+}
+
+/* TABLE CONTAINER */
+.table-container {
+  background: white;
+  border-radius: 16px;
+  padding: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  overflow-x: auto;
+}
+
+/* TABLE */
+.audit-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+/* HEADER */
+.audit-table th {
+  text-align: left;
+  padding: 12px;
+  color: #6c757d;
+  font-size: 13px;
+}
+
+/* ROW STYLE */
+.audit-table tbody tr {
+  background: #ffffff;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  border-radius: 12px;
+  transition: all 0.2s ease;
+}
+
+.audit-table tbody tr:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.audit-table td {
+  padding: 14px;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+/* ✅ ACTION BADGE (FIXED ISSUE) */
+.action-badge {
+  display: inline-block;
+  white-space: nowrap; /* ✅ prevents text breaking */
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* COLORS */
+.action-badge.CREATE_INTERNAL_USER {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.action-badge.DELETE_USER,
+.action-badge.DELETE_OFFICER {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.action-badge.USER_LOGIN {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.action-badge.PASSWORD_RESET {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+/* DETAILS COLUMN */
+.audit-table td:last-child {
+  max-width: 280px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* PAGINATION */
+.pagination {
+  margin-top: 20px;
+}
+
+.pagination button {
+  margin-right: 6px;
+  padding: 7px 12px;
+  border-radius: 6px;
+  border: none;
+  background: #e5e7eb;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background: #2563eb;
+  color: white;
+}
+
+

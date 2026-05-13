@@ -1,0 +1,215 @@
+/* =====================================================
+   ADMIN DASHBOARD – COMPLETE & STABLE CSS
+   (Safe to delete old file and paste this)
+===================================================== */
+
+.admin-dashboard {
+  padding: 20px;
+  background: #f4f7fb;
+}
+
+/* ================= HEADER ================= */
+.dashboard-header {
+  margin-bottom: 25px;
+}
+
+.dashboard-header .badge {
+  background: #fcbf49;
+  color: #143859;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.dashboard-header h2 {
+  font-size: 30px;
+  margin: 10px 0 5px;
+}
+
+.dashboard-header p {
+  color: #6c757d;
+  font-size: 14px;
+}
+
+/* ================= KPI CARDS ================= */
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.dashboard-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-card h3 {
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+.dashboard-card p {
+  font-weight: 600;
+  color: #555;
+}
+
+/* ✅ HOVER RESTORED */
+.dashboard-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(0,0,0,0.15);
+}
+
+/* ================= SECTION ================= */
+.dashboard-section {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* ================= TABLE ================= */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+}
+
+.users-table thead {
+  background: #143859;
+  color: #ffffff;
+}
+
+.users-table th,
+.users-table td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.users-table tbody tr:hover {
+  background: #f4f8ff;
+}
+
+/* ================= ROLE BADGE ================= */
+.role-badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  background: #ffe8c7;
+  color: #b45309;
+}
+
+/* ================= STATUS BADGE ================= */
+.status-badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-badge.active {
+  background: #198754;
+  color: #ffffff;
+}
+
+.status-badge.inactive {
+  background: #dc3545;
+  color: #ffffff;
+}
+
+/* ================= ACTION BUTTONS ================= */
+.action-cell {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn {
+  padding: 6px 14px;
+  font-size: 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: filter 0.25s ease, transform 0.25s ease;
+}
+
+/* VIEW */
+.view-btn {
+  background: #29548a;
+  color: #ffffff;
+}
+
+.view-btn:hover {
+  filter: brightness(1.1);
+}
+
+/* DELETE */
+.delete-btn {
+  background: #dc3545;
+  color: #ffffff;
+}
+
+.delete-btn:hover {
+  filter: brightness(1.1);
+}
+
+/* ✅ DISABLED DELETE FOR ADMIN */
+.disabled-btn {
+  background: #cccccc !important;
+  color: #666666 !important;
+  cursor: not-allowed !important;
+  pointer-events: none;
+}
+
+/* ================= MODAL ================= */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-box {
+  background: #ffffff;
+  padding: 26px;
+  border-radius: 14px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+}
+
+.modal-actions {
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  font-size: 13px;
+}
+
+.modal-btn.cancel {
+  background: #cccccc;
+}
+
+.modal-btn.confirm {
+  background: #dc3545;
+  color: #ffffff;
+}

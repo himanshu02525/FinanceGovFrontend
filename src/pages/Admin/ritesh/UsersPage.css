@@ -1,0 +1,311 @@
+/* ===============================/* PAGE CONTAINER
+================================= */
+.users-page {
+ padding: 10px 15px;
+ padding-left: 5px; 
+}
+/* ===============================
+   SEARCH + FILTER
+================================= */
+.controls {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.controls input,
+.controls select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* ===============================
+   TABLE STRUCTURE
+================================= */
+.table-container {
+  width: 100%;
+  overflow-x: auto; 
+  margin-left: 0;
+  padding-left:0;
+  
+}
+
+
+.users-table {
+  width: 100%;
+  min-width: 950px;
+  border-collapse: collapse;
+ 
+}
+
+.users-table th {
+  background: #143859;
+  color: white;
+  padding: 14px;
+  text-align: left;
+}
+
+.users-table td {
+  padding: 14px;
+  border-bottom: 1px solid #eee;
+  vertical-align: middle;
+  word-wrap: break-word; /* ✅ prevents overflow */
+}
+
+
+.users-table th:nth-child(6) {
+  width: 240px;         /* ✅ reduce actions column width */
+}
+
+
+/* ===============================
+   COLUMN WIDTH FIX
+================================= */
+.users-table th:nth-child(1) { width: 60px; }
+.users-table th:nth-child(2) { width: 150px; }
+.users-table th:nth-child(3) { width: 250px; }
+.users-table th:nth-child(4) { width: 150px; }
+.users-table th:nth-child(5) { width: 120px; }
+.users-table th:nth-child(6) { width: 300px; }
+
+/* ===============================
+   HOVER EFFECT
+================================= */
+.users-table tr:hover {
+  background: #f4f8ff;
+}
+
+/* ===============================
+   EMPTY STATE
+================================= */
+.empty-state {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+}
+
+/* ===============================
+   ROLE BADGES
+================================= */
+.role-badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* ADMIN */
+.role-admin {
+  background: #fff3cd;
+  color: #b45309;
+}
+
+/* OFFICER */
+.role-officer {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+/* CITIZEN */
+.role-citizen {
+  background: #ecfdf5;
+  color: #047857;
+}
+
+/* ===============================
+   STATUS BADGES
+================================= */
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.status-badge.active {
+  background: #198754;
+  color: white;
+}
+
+.status-badge.inactive {
+  background: #dc3545;
+  color: white;
+}
+
+/* ===============================
+   ACTION BUTTONS FIX
+================================= */
+.action-cell {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  /* flex-wrap: nowrap;  ✅ prevents breaking */
+}
+
+/* ===============================
+   BUTTON BASE
+================================= */
+.btn {
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: none;
+  font-size: 11px;
+  cursor: pointer;
+  min-width: auto;
+  white-space: nowrap; /* ✅ keeps button text intact */
+  transition: 0.2s ease;
+}
+
+/* VIEW */
+.view-btn {
+  background: #29548a;
+  color: white;
+}
+.view-btn:hover {
+  background: #1e3f6b;
+}
+
+/* EDIT */
+.edit-btn {
+  background: #f4b740;
+  color: #143859;
+}
+.edit-btn:hover {
+  background: #e0a52f;
+}
+
+/* DELETE */
+.delete-btn {
+  background: #dc3545;
+  color: white;
+}
+.delete-btn:hover {
+  background: #b02a37;
+}
+
+/* RESTORE */
+.restore-btn {
+  background: #198754;
+  color: white;
+}
+.restore-btn:hover {
+  background: #146c43;
+}
+
+/* ✅ DISABLED BUTTON STYLE */
+button:disabled,
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* LOCK */
+.lock-btn {
+  background: #ccc;
+  cursor: not-allowed;
+  padding: 5px 8px;
+}
+
+/* ===============================
+   PAGINATION
+================================= */
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  background: #e9ecef;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background: #d0d7e2;
+}
+
+.pagination .active {
+  background: #143859;
+  color: white;
+}
+
+/* ===============================
+   MODAL (VIEW USER)
+================================= */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 23, 42, 0.65); /* darker, premium */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-box {
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 14px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  animation: fadeIn 0.25s ease-in-out;
+}
+
+/* title */
+.modal-box h3 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #143859;
+}
+
+/* text */
+.modal-box p {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.modal-box strong {
+  color: #143859;
+}
+
+/* close button */
+.modal-btn {
+  margin-top: 15px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  background: #143859;
+  color: white;
+  cursor: pointer;
+}
+
+.modal-btn:hover {
+  background: #0f2c47;
+}
+
+/* animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+

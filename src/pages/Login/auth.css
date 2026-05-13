@@ -1,0 +1,161 @@
+/* ===== PAGE BACKGROUND ===== */
+.auth-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0f2f4f 0%, #1e4d8b 50%, #2d6cb8 100%);
+}
+
+/* BACK BUTTON */
+.auth-back-btn {
+  position: fixed;      /* ✅ IMPORTANT */
+  top: 20px;            /* ✅ push BELOW header */
+  left: 20px;
+  z-index: 9999;        /* ✅ stay above everything */
+
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(6px);
+
+  padding: 8px 14px;
+  border-radius: 8px;
+
+  border: none;
+  color: #fff;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  cursor: pointer;
+}
+.auth-back-btn:hover {
+  background: rgba(255,255,255,0.25);
+  transform: translateX(-2px);
+}
+
+
+/* ===== MAIN WRAPPER ===== */
+.auth-wrapper {
+  display: flex;
+  width: 850px;            /* ✅ reduced from 900 */
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+}
+
+/* ===== LEFT PANEL ===== */
+.auth-left {
+  flex: 1;
+  background: linear-gradient(135deg, #143859, #1e4d8b);
+  color: white;
+  padding: 30px;
+}
+
+.brand-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.finance {
+  color: #ffffff;
+}
+
+.gov {
+  color: #facc15;
+}
+
+.auth-left .tagline {
+  font-size: 13px;
+  margin-bottom: 20px;
+  color: rgba(255,255,255,0.85);
+}
+
+.auth-left ul {
+  list-style: none;
+  padding: 0;
+}
+
+.auth-left ul li {
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+/* ===== RIGHT PANEL ===== */
+.auth-right {
+  flex: 1;
+  padding: 30px;   /* ✅ reduced from 40 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== CARD ===== */
+.login-card {
+  width: 100%;
+  max-width: 360px;   /* ✅ prevents stretching */
+}
+
+/* TITLE */
+.login-card h2 {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+/* SUBTEXT */
+.subtitle {
+  font-size: 13px;
+  color: gray;
+  margin-bottom: 15px;
+}
+
+/* INPUT */
+.login-card input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  transition: 0.2s;
+}
+
+.login-card input:focus {
+  border-color: #1e4d8b;
+  outline: none;
+}
+
+/* BUTTON */
+.login-card button {
+  width: 100%;
+  padding: 10px;
+  background: #143859;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.login-card button:hover {
+  background: #0d263d;
+  transform: translateY(-1px);
+}
+
+/* FORGOT PASSWORD LINK */
+.forgot-password {
+  text-align: right;
+  margin-top: 5px;
+}
+
+.forgot-password a {
+  font-size: 13px;
+  color: #1e4d8b;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}

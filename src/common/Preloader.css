@@ -1,0 +1,25 @@
+.preloader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #143859; /* Matching FinanceGov primary blue */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.preloader-brand {
+  text-align: center;
+}
+
+.letter-spacing {
+  letter-spacing: 4px;
+  font-size: 0.8rem;
+  margin-top: 10px;
+  color: #ffffff !important; /* Updated to solid white */
+  opacity: 1 !important;     /* Ensures no transparency */
+  font-weight: 500;
+}

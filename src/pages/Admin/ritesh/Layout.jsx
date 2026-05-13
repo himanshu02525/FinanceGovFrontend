@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Header } from './Header';
+import { Header } from '../../../common/layout/Header';
 import { Sidebar } from './Sidebar';
-import { Footer } from './Footer';
+import { Footer } from '../../../common/layout/Footer';
 import './Layout.css';
 
 export const Layout = ({ children }) => {
