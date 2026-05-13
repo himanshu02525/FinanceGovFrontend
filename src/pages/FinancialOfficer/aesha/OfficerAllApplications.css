@@ -1,0 +1,120 @@
+/* src/roles/FinancialOfficer/aeshamodule3/OfficerAllApplications.css */
+
+.history-view {
+  height: calc(100vh - 80px); /* Viewport height minus header */
+  display: flex;
+  flex-direction: column;
+  background-color: #f8fafc;
+  overflow: hidden; /* Lock main screen */
+}
+
+.fixed-top-header {
+  padding: 2.5rem 2.5rem 0.5rem 2.5rem;
+  flex-shrink: 0;
+  background-color: #f8fafc;
+}
+
+.view-header h2 {
+  color: #143859;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-left p {
+  color: #64748b;
+  margin-top: 5px;
+}
+
+/* THE VERTICAL SCROLL ZONE */
+.vertical-scroll-area {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 1rem 2.5rem 0 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-container {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+  flex-shrink: 0;
+}
+
+.search-form { display: flex; gap: 15px; align-items: center; }
+.search-input-group { position: relative; flex: 1; }
+.search-icon { position: absolute; left: 15px; top: 50%; transform: translateY(-50%); color: #94a3b8; }
+
+.search-field { 
+  width: 100%; 
+  padding: 12px 12px 12px 45px; 
+  border: 1px solid #e2e8f0; 
+  border-radius: 8px; 
+  font-size: 1rem; 
+  outline: none; 
+}
+
+.btn-search { 
+  background-color: #143859; 
+  color: white; 
+  border: none; 
+  padding: 12px 24px; 
+  border-radius: 8px; 
+  font-weight: 600; 
+  cursor: pointer; 
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.table-wrapper {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.06);
+  margin-bottom: 3rem;
+  flex-shrink: 0;
+}
+
+.officer-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.officer-table th {
+  background-color: #143859;
+  color: white;
+  padding: 1.5rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.officer-table td {
+  padding: 1.5rem;
+  border-bottom: 1px solid #edf2f7;
+  color: #334155;
+}
+
+.entity-id-cell { font-weight: 700; color: #143859; }
+
+/* Status Pills */
+.status-pill { padding: 6px 14px; border-radius: 20px; font-size: 0.75rem; font-weight: 800; display: inline-block; text-transform: uppercase; }
+.status-pill.approved { background: #dcfce7; color: #166534; }
+.status-pill.pending { background: #fef3c7; color: #92400e; }
+.status-pill.rejected { background: #fee2e2; color: #991b1b; }
+
+.empty-row, .loading-state { text-align: center; padding: 3rem !important; color: #94a3b8; }
+
+/* Custom Scrollbar */
+.vertical-scroll-area::-webkit-scrollbar { width: 6px; }
+.vertical-scroll-area::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+
+.animate-spin { animation: spin 1s linear infinite; }
+@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }

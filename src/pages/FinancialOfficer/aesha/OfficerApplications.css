@@ -1,0 +1,143 @@
+/* src/roles/FinancialOfficer/aeshaModule3/OfficerApplications.css */
+
+.officer-view {
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  background-color: #f8fafc;
+  overflow: hidden;
+}
+
+.fixed-top-header {
+  padding: 2.5rem 2.5rem 0.5rem 2.5rem;
+  flex-shrink: 0;
+}
+
+.view-header h2 {
+  color: #143859;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.vertical-scroll-area {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 1rem 2.5rem 0 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-container {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+  flex-shrink: 0;
+}
+
+.search-form { display: flex; gap: 15px; align-items: center; }
+.search-input-group { position: relative; flex: 1; }
+.search-icon { position: absolute; left: 15px; top: 50%; transform: translateY(-50%); color: #94a3b8; }
+.search-field { width: 100%; padding: 12px 12px 12px 45px; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 1rem; outline: none; }
+.btn-search { background-color: #143859; color: white; border: none; padding: 12px 24px; border-radius: 8px; font-weight: 600; cursor: pointer; }
+
+.table-wrapper {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.06);
+  margin-bottom: 3rem;
+  flex-shrink: 0;
+}
+
+.officer-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.officer-table th {
+  background-color: #143859;
+  color: white;
+  padding: 1.5rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.officer-table td {
+  padding: 1.5rem;
+  border-bottom: 1px solid #edf2f7;
+  color: #334155;
+}
+
+.btn-approve { background: #10b981; color: white; border: none; padding: 10px 16px; border-radius: 6px; cursor: pointer; font-weight: 600;}
+.btn-reject { background: #ef4444; color: white; border: none; padding: 10px 16px; border-radius: 6px; cursor: pointer; font-weight: 600;}
+
+/* UPDATED: Grant button styles with disabled state */
+.btn-grant { 
+  background: #fcbf49; 
+  color: #143859; 
+  border: none; 
+  padding: 10px 16px; 
+  border-radius: 6px; 
+  cursor: pointer; 
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.btn-grant:hover:not(:disabled) {
+  background: #fca511;
+}
+
+.btn-grant.disabled, .btn-grant:disabled {
+  background: #f1f5f9;
+  color: #94a3b8;
+  border: 1px solid #e2e8f0;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn-grant { 
+  background: #fcbf49; 
+  color: #143859; 
+  border: none; 
+  padding: 10px 16px; 
+  border-radius: 6px; 
+  cursor: pointer; 
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+/* THE DISABLED STATE */
+.btn-grant.disabled, 
+.btn-grant:disabled {
+  background: #f1f5f9;
+  color: #94a3b8;
+  border: 1px solid #e2e8f0;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn-grant:hover:not(:disabled) {
+  background: #fca511;
+  transform: translateY(-1px);
+}
+
+.status-pill { padding: 6px 14px; border-radius: 20px; font-size: 0.75rem; font-weight: 800; display: inline-block; }
+.status-pill.pending { background: #fef3c7; color: #92400e; }
+.status-pill.approved { background: #dcfce7; color: #166534; }
+.status-pill.rejected { background: #fee2e2; color: #991b1b; }
+
+.vertical-scroll-area::-webkit-scrollbar { width: 6px; }
+.vertical-scroll-area::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+
+.animate-spin { animation: spin 1s linear infinite; }
+@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
